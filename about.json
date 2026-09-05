@@ -1,8 +1,8 @@
 {
-    "name": "Niyari",
+    "name": "Shizuku",
     "component": false,
     "license_url": null,
-    "about_url": "https://github.com/obbywiki/discourse-themes-Niyari",
+    "about_url": "https://github.com/obbywiki/discourse-themes-Shizuku",
     "authors": "The Obby Wiki",
     "theme_version": "0.0.0",
     "minimum_discourse_version": "3.5.0",
@@ -11,7 +11,7 @@
         "serialize_topic_excerpts": true
     },
     "color_schemes": {
-        "Niyari Light": {
+        "Shizuku Light": {
             "primary": "1a222b",
             "secondary": "ffffff",
             "tertiary": "53a3f2",
@@ -26,7 +26,7 @@
             "selected": "c6e1ff",
             "hover": "e2f0ff"
         },
-        "Niyari Dark": {
+        "Shizuku Dark": {
             "primary": "f2f5f8",
             "secondary": "181e24",
             "tertiary": "63b3ff",

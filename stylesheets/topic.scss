@@ -10,8 +10,8 @@
 #topic {
   background: var(--d-content-background);
   border-radius: var(--d-border-radius-large);
-  box-shadow: var(--niyari-card-shadow);
-  padding: var(--niyari-gutter);
+  box-shadow: var(--shizuku-card-shadow);
+  padding: var(--shizuku-gutter);
   box-sizing: border-box;
 }
 
@@ -20,7 +20,7 @@
 }
 
 #topic-footer-buttons {
-  padding: var(--niyari-gutter) 0 0;
+  padding: var(--shizuku-gutter) 0 0;
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;
@@ -41,7 +41,7 @@
   article.boxed {
     background: var(--d-content-background);
     border-radius: var(--d-border-radius-large);
-    box-shadow: var(--niyari-card-shadow);
+    box-shadow: var(--shizuku-card-shadow);
     padding: var(--space-4);
     border: none;
   }
@@ -69,7 +69,7 @@
   background: var(--d-content-background);
   border: none;
   border-radius: var(--d-border-radius-large);
-  box-shadow: var(--niyari-card-shadow);
+  box-shadow: var(--shizuku-card-shadow);
 }
 
 .small-action {
@@ -80,7 +80,7 @@ aside.quote,
 aside.onebox,
 blockquote {
   border-radius: var(--d-border-radius);
-  background: var(--niyari-btn-regular-bg);
+  background: var(--shizuku-btn-regular-bg);
   border-left: 3px solid var(--tertiary);
 }
 
@@ -91,14 +91,14 @@ blockquote {
   }
 
   pre {
-    background: var(--niyari-codeblock-bg);
+    background: var(--shizuku-codeblock-bg);
     color: #e6edf3;
   }
 
   p > code,
   li > code {
-    background: var(--niyari-btn-regular-bg);
-    color: var(--niyari-btn-content);
+    background: var(--shizuku-btn-regular-bg);
+    color: var(--shizuku-btn-content);
     border-radius: var(--d-border-radius-small);
     padding: 0.15em 0.4em;
   }
@@ -110,7 +110,7 @@ blockquote {
 
 .timeline-container .topic-timeline {
   .timeline-scrollarea {
-    border-left-color: var(--niyari-line-color);
+    border-left-color: var(--shizuku-line-color);
   }
 
   .timeline-handle {
@@ -134,7 +134,7 @@ blockquote {
   background: var(--d-content-background);
   border: none;
   border-radius: var(--d-border-radius-large);
-  box-shadow: var(--niyari-card-shadow);
+  box-shadow: var(--shizuku-card-shadow);
   margin-bottom: var(--space-3);
   padding: var(--space-4);
 }

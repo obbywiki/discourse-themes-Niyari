@@ -1,56 +1,56 @@
 // inspired by https://github.com/saicaca/fuwari
 
 :root {
-  --niyari-hue: 250;
-  --niyari-page-width: 75rem;
-  --niyari-card-shadow: 0 2px 8px rgb(0, 0, 0, 0.04);
-  --niyari-card-shadow-hover: 0 4px 16px rgb(0, 0, 0, 0.07);
+  --shizuku-hue: 250;
+  --shizuku-page-width: 75rem;
+  --shizuku-card-shadow: 0 2px 8px rgb(0, 0, 0, 0.04);
+  --shizuku-card-shadow-hover: 0 4px 16px rgb(0, 0, 0, 0.07);
   --accent-text-color: #fff;
   --background-color: light-dark(
     oklch(from var(--tertiary) 95% 0.01 h),
     oklch(from var(--tertiary) 16% 0.014 h)
   );
   --d-content-background: light-dark(#fff, var(--secondary));
-  --niyari-btn-content: light-dark(
+  --shizuku-btn-content: light-dark(
     oklch(from var(--tertiary) 55% 0.12 h),
     oklch(from var(--tertiary) 75% 0.1 h)
   );
-  --niyari-btn-regular-bg: light-dark(
+  --shizuku-btn-regular-bg: light-dark(
     oklch(from var(--tertiary) 95% 0.025 h),
     oklch(from var(--tertiary) 33% 0.035 h)
   );
-  --niyari-btn-regular-bg-hover: light-dark(
+  --shizuku-btn-regular-bg-hover: light-dark(
     oklch(from var(--tertiary) 90% 0.05 h),
     oklch(from var(--tertiary) 38% 0.04 h)
   );
-  --niyari-btn-regular-bg-active: light-dark(
+  --shizuku-btn-regular-bg-active: light-dark(
     oklch(from var(--tertiary) 85% 0.08 h),
     oklch(from var(--tertiary) 43% 0.045 h)
   );
-  --niyari-btn-plain-bg-hover: light-dark(
+  --shizuku-btn-plain-bg-hover: light-dark(
     oklch(from var(--tertiary) 95% 0.025 h),
     oklch(from var(--tertiary) 30% 0.035 h)
   );
-  --niyari-btn-card-bg-hover: light-dark(
+  --shizuku-btn-card-bg-hover: light-dark(
     oklch(from var(--tertiary) 98% 0.005 h),
     oklch(from var(--tertiary) 30% 0.03 h)
   );
-  --niyari-selection-bg: light-dark(
+  --shizuku-selection-bg: light-dark(
     oklch(from var(--tertiary) 90% 0.05 h),
     oklch(from var(--tertiary) 40% 0.08 h)
   );
-  --niyari-float-panel-bg: light-dark(
+  --shizuku-float-panel-bg: light-dark(
     #fff,
     oklch(from var(--tertiary) 19% 0.015 h)
   );
-  --niyari-line-color: light-dark(rgb(0, 0, 0, 0.08), rgb(255, 255, 255, 0.08));
-  --niyari-codeblock-bg: oklch(from var(--tertiary) 17% 0.015 h);
-  --niyari-page-bg: var(--background-color, var(--secondary));
+  --shizuku-line-color: light-dark(rgb(0, 0, 0, 0.08), rgb(255, 255, 255, 0.08));
+  --shizuku-codeblock-bg: oklch(from var(--tertiary) 17% 0.015 h);
+  --shizuku-page-bg: var(--background-color, var(--secondary));
   --d-font-family--monospace:
     "JetBrains Mono", "SFMono-Regular", ui-monospace, "Cascadia Code",
     "Segoe UI Mono", monospace;
 
-  --d-max-width: var(--niyari-page-width);
+  --d-max-width: var(--shizuku-page-width);
   --d-border-radius: 0.75rem;
   --d-border-radius-large: 1rem;
   --d-border-radius-small: 0.5rem;
@@ -58,27 +58,27 @@
   --d-input-border-radius: var(--d-border-radius);
   --d-nav-pill-border-radius: var(--d-border-radius);
   --d-tag-border-radius: 999px;
-  --d-tag-background-color: var(--niyari-btn-regular-bg);
+  --d-tag-background-color: var(--shizuku-btn-regular-bg);
   --d-tag-horizontal-padding: 0.5em;
   --d-tag-font-size: var(--font-down-1);
 
   --d-nav-underline-height: 0;
-  --d-nav-bg-color--hover: var(--niyari-btn-plain-bg-hover);
-  --d-nav-bg-color--active: var(--niyari-btn-regular-bg);
+  --d-nav-bg-color--hover: var(--shizuku-btn-plain-bg-hover);
+  --d-nav-bg-color--active: var(--shizuku-btn-regular-bg);
   --d-nav-color--hover: var(--tertiary);
-  --d-nav-color--active: var(--niyari-btn-content);
+  --d-nav-color--active: var(--shizuku-btn-content);
   --d-nav-border-color--active: transparent;
 
-  --niyari-gutter: var(--space-6);
-  --nav-horizontal-padding: var(--niyari-gutter);
-  --main-outlet-padding-x: var(--niyari-gutter);
-  --main-outlet-padding-bottom: var(--niyari-gutter);
-  --list-container-padding-x: var(--niyari-gutter);
-  --d-wrap-padding-x: var(--niyari-gutter);
+  --shizuku-gutter: var(--space-6);
+  --nav-horizontal-padding: var(--shizuku-gutter);
+  --main-outlet-padding-x: var(--shizuku-gutter);
+  --main-outlet-padding-bottom: var(--shizuku-gutter);
+  --list-container-padding-x: var(--shizuku-gutter);
+  --d-wrap-padding-x: var(--shizuku-gutter);
   --topic-body-width-padding: var(--space-4);
   --active-shadow: none;
 
-  --d-header-icon-background--hover: var(--niyari-btn-plain-bg-hover);
+  --d-header-icon-background--hover: var(--shizuku-btn-plain-bg-hover);
   --d-header-icon-color--hover: var(--tertiary);
 
   --topic-list-item-background-color: var(--d-content-background);
@@ -88,12 +88,12 @@
   --d-category-box-background-color: var(--d-content-background);
 
   --d-button-border: none;
-  --d-button-default-bg-color: var(--niyari-btn-regular-bg);
-  --d-button-default-bg-color--hover: var(--niyari-btn-regular-bg-hover);
-  --d-button-default-text-color: var(--niyari-btn-content);
-  --d-button-default-text-color--hover: var(--niyari-btn-content);
-  --d-button-default-icon-color: var(--niyari-btn-content);
-  --d-button-default-icon-color--hover: var(--niyari-btn-content);
+  --d-button-default-bg-color: var(--shizuku-btn-regular-bg);
+  --d-button-default-bg-color--hover: var(--shizuku-btn-regular-bg-hover);
+  --d-button-default-text-color: var(--shizuku-btn-content);
+  --d-button-default-text-color--hover: var(--shizuku-btn-content);
+  --d-button-default-icon-color: var(--shizuku-btn-content);
+  --d-button-default-icon-color--hover: var(--shizuku-btn-content);
 
   --d-button-primary-bg-color: var(--tertiary);
   --d-button-primary-bg-color--hover: var(--tertiary);
@@ -102,7 +102,7 @@
   --d-button-primary-icon-color: var(--accent-text-color);
   --d-button-primary-icon-color--hover: var(--accent-text-color);
 
-  --shadow-card: var(--niyari-card-shadow);
+  --shadow-card: var(--shizuku-card-shadow);
   --shadow-dropdown: 0 8px 24px rgb(0, 0, 0, 0.08);
   --shadow-header: none;
   --shadow-modal: 0 16px 40px rgb(0, 0, 0, 0.12);
@@ -113,12 +113,12 @@
 }
 
 html {
-  background-color: var(--niyari-page-bg);
+  background-color: var(--shizuku-page-bg);
   --d-nav-underline-height: 0px !important;
 }
 
 body {
-  background-color: var(--niyari-page-bg);
+  background-color: var(--shizuku-page-bg);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -128,7 +128,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--niyari-selection-bg);
+  background-color: var(--shizuku-selection-bg);
 }
 
 code, pre, kbd, samp {

@@ -1,7 +1,7 @@
 html {
   --accent-color: #{$tertiary} !important;
   --accent-text-color: #fff;
-  --niyari-hue: 250;
+  --shizuku-hue: 250;
 
   --background-color: light-dark(
     oklch(from #{$tertiary} 95% 0.01 h),
@@ -9,42 +9,42 @@ html {
   ) !important;
   --d-content-background: light-dark(#fff, #{$secondary}) !important;
 
-  --niyari-card-bg: var(--d-content-background);
-  --niyari-page-bg: var(--background-color);
-  --niyari-btn-content: light-dark(
+  --shizuku-card-bg: var(--d-content-background);
+  --shizuku-page-bg: var(--background-color);
+  --shizuku-btn-content: light-dark(
     oklch(from #{$tertiary} 55% 0.12 h),
     oklch(from #{$tertiary} 75% 0.1 h)
   );
-  --niyari-btn-regular-bg: light-dark(
+  --shizuku-btn-regular-bg: light-dark(
     oklch(from #{$tertiary} 95% 0.025 h),
     oklch(from #{$tertiary} 33% 0.035 h)
   );
-  --niyari-btn-regular-bg-hover: light-dark(
+  --shizuku-btn-regular-bg-hover: light-dark(
     oklch(from #{$tertiary} 90% 0.05 h),
     oklch(from #{$tertiary} 38% 0.04 h)
   );
-  --niyari-btn-regular-bg-active: light-dark(
+  --shizuku-btn-regular-bg-active: light-dark(
     oklch(from #{$tertiary} 85% 0.08 h),
     oklch(from #{$tertiary} 43% 0.045 h)
   );
-  --niyari-btn-plain-bg-hover: light-dark(
+  --shizuku-btn-plain-bg-hover: light-dark(
     oklch(from #{$tertiary} 95% 0.025 h),
     oklch(from #{$tertiary} 30% 0.035 h)
   );
-  --niyari-btn-card-bg-hover: light-dark(
+  --shizuku-btn-card-bg-hover: light-dark(
     oklch(from #{$tertiary} 98% 0.005 h),
     oklch(from #{$tertiary} 30% 0.03 h)
   );
-  --niyari-selection-bg: light-dark(
+  --shizuku-selection-bg: light-dark(
     oklch(from #{$tertiary} 90% 0.05 h),
     oklch(from #{$tertiary} 40% 0.08 h)
   );
-  --niyari-float-panel-bg: light-dark(
+  --shizuku-float-panel-bg: light-dark(
     #fff,
     oklch(from #{$tertiary} 19% 0.015 h)
   );
-  --niyari-line-color: light-dark(rgb(0, 0, 0, 0.08), rgb(255, 255, 255, 0.08));
-  --niyari-codeblock-bg: oklch(from #{$tertiary} 17% 0.015 h);
+  --shizuku-line-color: light-dark(rgb(0, 0, 0, 0.08), rgb(255, 255, 255, 0.08));
+  --shizuku-codeblock-bg: oklch(from #{$tertiary} 17% 0.015 h);
 
   --d-selected: light-dark(
     oklch(from #{$tertiary} 90% 0.05 h),
@@ -68,6 +68,6 @@ html {
   --d-link-color: var(--tertiary);
   --tertiary-hover: #{$tertiary};
 
-  --hljs-bg: var(--niyari-codeblock-bg);
-  --inline-code-bg: var(--niyari-btn-regular-bg);
+  --hljs-bg: var(--shizuku-codeblock-bg);
+  --inline-code-bg: var(--shizuku-btn-regular-bg);
 }

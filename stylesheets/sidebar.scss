@@ -5,11 +5,11 @@
   --active-shadow: none;
   --d-sidebar-row-horizontal-padding: var(--space-4);
   --d-sidebar-row-height: 2.5rem;
-  --d-sidebar-active-background: var(--niyari-btn-regular-bg);
-  --d-sidebar-active-color: var(--niyari-btn-content);
-  --d-sidebar-highlight-background: var(--niyari-btn-plain-bg-hover);
-  --d-sidebar-highlight-color: var(--niyari-btn-content);
-  --d-hover: var(--niyari-btn-regular-bg);
+  --d-sidebar-active-background: var(--shizuku-btn-regular-bg);
+  --d-sidebar-active-color: var(--shizuku-btn-content);
+  --d-sidebar-highlight-background: var(--shizuku-btn-plain-bg-hover);
+  --d-sidebar-highlight-color: var(--shizuku-btn-content);
+  --d-hover: var(--shizuku-btn-regular-bg);
   --list-item-padding: var(--space-3) var(--space-4);
   width: 28rem;
   min-width: 0;
@@ -17,7 +17,7 @@
   padding: var(--space-3);
   border: none;
   border-radius: var(--d-border-radius-large);
-  background: var(--niyari-float-panel-bg);
+  background: var(--shizuku-float-panel-bg);
   box-shadow: var(--shadow-dropdown);
   box-sizing: border-box;
   overflow: hidden;
@@ -45,7 +45,7 @@
   .sidebar-section-wrapper.sidebar-section {
     padding: var(--space-3) 0;
     margin: 0;
-    border-color: var(--niyari-line-color);
+    border-color: var(--shizuku-line-color);
   }
 
   .sidebar-section-header-wrapper,
@@ -83,9 +83,9 @@
 
   .sidebar-section-link-wrapper .sidebar-section-link:hover,
   .sidebar-section-link-wrapper .sidebar-section-link:focus {
-    background: var(--niyari-btn-plain-bg-hover);
+    background: var(--shizuku-btn-plain-bg-hover);
     box-shadow: none;
-    color: var(--niyari-btn-content);
+    color: var(--shizuku-btn-content);
   }
 
   .sidebar-section-link:focus-visible {
@@ -95,8 +95,8 @@
 
   .sidebar-section-link-wrapper .sidebar-section-link.active,
   .sidebar-section-link-wrapper .sidebar-section-link--active {
-    background: var(--niyari-btn-regular-bg);
-    color: var(--niyari-btn-content);
+    background: var(--shizuku-btn-regular-bg);
+    color: var(--shizuku-btn-content);
     box-shadow: none;
   }
 
@@ -129,20 +129,20 @@
 
   .sidebar-sections,
   .sidebar-footer-wrapper {
-    --d-sidebar-highlight-background: var(--niyari-btn-plain-bg-hover);
-    --d-sidebar-active-background: var(--niyari-btn-regular-bg);
-    --d-sidebar-active-color: var(--niyari-btn-content);
+    --d-sidebar-highlight-background: var(--shizuku-btn-plain-bg-hover);
+    --d-sidebar-active-background: var(--shizuku-btn-regular-bg);
+    --d-sidebar-active-color: var(--shizuku-btn-content);
   }
 
   .sidebar-sections.admin-panel {
     --d-sidebar-admin-background: var(--d-content-background);
-    --d-sidebar-highlight-background: var(--niyari-btn-plain-bg-hover);
-    --d-sidebar-active-background: var(--niyari-btn-regular-bg);
-    --d-sidebar-active-color: var(--niyari-btn-content);
+    --d-sidebar-highlight-background: var(--shizuku-btn-plain-bg-hover);
+    --d-sidebar-active-background: var(--shizuku-btn-regular-bg);
+    --d-sidebar-active-color: var(--shizuku-btn-content);
   }
 
   .sidebar-footer-wrapper {
-    background: var(--niyari-page-bg);
+    background: var(--shizuku-page-bg);
   }
 
   .sidebar-footer-container::before {
@@ -159,7 +159,7 @@
   @include viewport.from(lg) {
     background: var(--d-content-background);
     border-radius: var(--d-border-radius-large);
-    box-shadow: var(--niyari-card-shadow);
+    box-shadow: var(--shizuku-card-shadow);
     margin: var(--space-3);
     padding-block: var(--space-2);
   }

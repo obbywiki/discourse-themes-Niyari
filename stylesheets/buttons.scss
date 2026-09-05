@@ -7,19 +7,19 @@
 
 .btn-default,
 .select-kit .select-kit-header.btn-default {
-  background: var(--niyari-btn-regular-bg);
-  color: var(--niyari-btn-content);
+  background: var(--shizuku-btn-regular-bg);
+  color: var(--shizuku-btn-content);
 
   .d-icon {
-    color: var(--niyari-btn-content);
+    color: var(--shizuku-btn-content);
   }
 
   .discourse-no-touch &:hover, .discourse-no-touch &:focus {
-    background: var(--niyari-btn-regular-bg-hover);
-    color: var(--niyari-btn-content);
+    background: var(--shizuku-btn-regular-bg-hover);
+    color: var(--shizuku-btn-content);
 
     .d-icon {
-      color: var(--niyari-btn-content);
+      color: var(--shizuku-btn-content);
     }
   }
 }
@@ -37,7 +37,7 @@
   .discourse-no-touch &:not([disabled]):focus {
     background: var(--tertiary);
     color: var(--accent-text-color);
-    box-shadow: 0 0 0 4px var(--niyari-btn-regular-bg);
+    box-shadow: 0 0 0 4px var(--shizuku-btn-regular-bg);
 
     .d-icon {
       color: var(--accent-text-color);
@@ -49,7 +49,7 @@
   border-radius: var(--d-button-border-radius);
 
   .discourse-no-touch &:hover {
-    background: var(--niyari-btn-plain-bg-hover);
+    background: var(--shizuku-btn-plain-bg-hover);
     color: var(--tertiary);
   }
 }

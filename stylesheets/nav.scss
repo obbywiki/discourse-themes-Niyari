@@ -26,8 +26,8 @@
 .nav-pills > li > a.active,
 .nav-pills > li a.active,
 .nav-pills > li button.active {
-  background: var(--niyari-btn-regular-bg);
-  color: var(--niyari-btn-content);
+  background: var(--shizuku-btn-regular-bg);
+  color: var(--shizuku-btn-content);
   box-shadow: none;
   border-bottom: none;
 
@@ -43,12 +43,12 @@
 .discourse-no-touch .nav-pills > li > a:hover,
 .discourse-no-touch .nav-pills > li a:hover,
 .discourse-no-touch .nav-pills > li button:hover {
-  background: var(--niyari-btn-plain-bg-hover);
+  background: var(--shizuku-btn-plain-bg-hover);
   color: var(--tertiary);
 
   &.active {
-    background: var(--niyari-btn-regular-bg);
-    color: var(--niyari-btn-content);
+    background: var(--shizuku-btn-regular-bg);
+    color: var(--shizuku-btn-content);
   }
 
   &::after,
@@ -78,11 +78,11 @@
 .list-controls .combo-box .select-kit-header {
   border-radius: var(--d-border-radius);
   border: none;
-  background: var(--niyari-btn-regular-bg);
+  background: var(--shizuku-btn-regular-bg);
 }
 
 .list-controls .combo-box .select-kit-header {
-  color: var(--niyari-btn-content);
+  color: var(--shizuku-btn-content);
 }
 
 .navigation-container {
@@ -94,7 +94,7 @@
   border: none;
   border-radius: var(--d-border-radius-large);
   box-shadow: var(--shadow-dropdown);
-  background: var(--niyari-float-panel-bg);
+  background: var(--shizuku-float-panel-bg);
 }
 
 .discourse-tags, .list-tags {
@@ -103,8 +103,8 @@
 
 .discourse-tag, .discourse-tag.simple, .discourse-tag.box, .discourse-tag.bullet {
   border-radius: var(--d-tag-border-radius);
-  background-color: var(--niyari-btn-regular-bg);
-  color: var(--niyari-btn-content) !important;
+  background-color: var(--shizuku-btn-regular-bg);
+  color: var(--shizuku-btn-content) !important;
   padding: 0.15em 0.6em;
 }
 

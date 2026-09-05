@@ -7,12 +7,12 @@
 
 .d-editor-textarea-wrapper, .d-editor-preview-wrapper {
   border-radius: var(--d-border-radius);
-  border-color: var(--niyari-line-color);
+  border-color: var(--shizuku-line-color);
   background: var(--d-content-background);
 }
 
 .d-editor-button-bar {
-  border-bottom-color: var(--niyari-line-color);
+  border-bottom-color: var(--shizuku-line-color);
 
   .btn {
     border-radius: var(--d-border-radius-small);
@@ -31,5 +31,5 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
 textarea, select,
 .d-editor-textarea-wrapper, div.ac-wrap {
   border-radius: var(--d-input-border-radius);
-  border-color: var(--niyari-line-color);
+  border-color: var(--shizuku-line-color);
 }

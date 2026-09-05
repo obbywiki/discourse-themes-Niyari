@@ -31,7 +31,7 @@
   background: var(--d-content-background);
   border: none;
   border-radius: var(--d-border-radius-large);
-  box-shadow: var(--niyari-card-shadow);
+  box-shadow: var(--shizuku-card-shadow);
   padding: var(--space-4);
   transition: box-shadow 150ms ease, background-color 150ms ease;
 
@@ -123,9 +123,9 @@
   }
 
   .discourse-no-touch &:hover {
-    background: var(--niyari-btn-card-bg-hover);
-    --topic-list-item-background-color: var(--niyari-btn-card-bg-hover);
-    --topic-list-item-background-color--visited: var(--niyari-btn-card-bg-hover);
+    background: var(--shizuku-btn-card-bg-hover);
+    --topic-list-item-background-color: var(--shizuku-btn-card-bg-hover);
+    --topic-list-item-background-color--visited: var(--shizuku-btn-card-bg-hover);
 
     .main-link a.title,
     .main-link a.title:visited,
@@ -155,14 +155,14 @@
 .latest-topic-list .latest-topic-list-item {
   background: var(--d-content-background);
   border-radius: var(--d-border-radius-large);
-  box-shadow: var(--niyari-card-shadow);
+  box-shadow: var(--shizuku-card-shadow);
   border: none;
   transition: background-color 150ms ease;
 }
 
 .discourse-no-touch .latest-topic-list-item:hover,
 .discourse-no-touch .latest-topic-list .latest-topic-list-item:hover {
-  background: var(--niyari-btn-card-bg-hover);
+  background: var(--shizuku-btn-card-bg-hover);
 }
 
 .latest-topic-list {
@@ -206,7 +206,7 @@
 #list-area > .contents {
   background: var(--d-content-background);
   border-radius: var(--d-border-radius-large);
-  box-shadow: var(--niyari-card-shadow);
+  box-shadow: var(--shizuku-card-shadow);
   padding: var(--space-4) var(--space-8) var(--space-8);
   box-sizing: border-box;
 }
