@@ -1,0 +1,141 @@
+@use "lib/viewport";
+
+.user-main .about {
+  .details,
+  &.collapsed-info .details,
+  &.has-background .details {
+    padding: 0;
+    border: none;
+  }
+
+  .details .primary {
+    padding: var(--space-5);
+    box-sizing: border-box;
+  }
+
+  .details .secondary {
+    box-sizing: border-box;
+    padding: var(--space-3) var(--space-5);
+    border-color: var(--niyari-line-color);
+
+    dl {
+      padding: 0;
+    }
+  }
+
+  @include viewport.from(md) {
+    .details .primary {
+      align-items: flex-start;
+      gap: var(--space-5);
+
+      .user-profile-avatar {
+        flex: 0 0 auto;
+      }
+
+      .avatar {
+        display: block;
+        margin: 0;
+      }
+
+      .avatar-flair {
+        right: 0;
+        bottom: 0;
+      }
+
+      .primary-textual {
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+    }
+
+    &.collapsed-info .details .primary {
+      align-items: center;
+
+      .user-profile-avatar {
+        align-self: center;
+      }
+
+      .avatar {
+        margin: 0;
+      }
+    }
+
+    .details .controls,
+    &.collapsed-info .details .controls {
+      align-self: flex-start;
+      flex: 0 0 auto;
+      margin: 0;
+      max-width: none;
+      width: max-content;
+
+      > ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+
+        > li {
+          flex: 0 0 auto;
+          width: auto;
+        }
+      }
+
+      .btn {
+        min-width: 0;
+        width: auto;
+      }
+
+      .user-profile-toggle-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.75rem;
+        height: 2.75rem;
+        padding: 0;
+        border: none;
+        border-radius: var(--d-border-radius);
+        background: transparent;
+        box-shadow: none;
+        color: var(--niyari-btn-content);
+
+        .d-button-label,
+        .d-icon {
+          display: none;
+        }
+
+        &::before {
+          content: "";
+          width: 0.5rem;
+          height: 0.5rem;
+          border-right: 2px solid currentColor;
+          border-bottom: 2px solid currentColor;
+          transform: translateY(-2px) rotate(45deg);
+          transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+
+          @media (prefers-reduced-motion: reduce) {
+            transition: none;
+          }
+        }
+
+        &[aria-expanded="true"]::before {
+          transform: translateY(2px) rotate(225deg);
+        }
+
+        &:hover {
+          background: var(--niyari-btn-plain-bg-hover);
+        }
+
+        &:focus-visible {
+          outline: 2px solid var(--tertiary);
+          outline-offset: 2px;
+        }
+      }
+    }
+
+    &.collapsed-info .details .controls {
+      align-self: flex-start;
+    }
+  }
+}
