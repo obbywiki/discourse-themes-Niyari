@@ -31,6 +31,10 @@
     oklch(from var(--tertiary) 95% 0.025 h),
     oklch(from var(--tertiary) 30% 0.035 h)
   );
+  --niyari-btn-card-bg-hover: light-dark(
+    oklch(from var(--tertiary) 98% 0.005 h),
+    oklch(from var(--tertiary) 30% 0.03 h)
+  );
   --niyari-selection-bg: light-dark(
     oklch(from var(--tertiary) 90% 0.05 h),
     oklch(from var(--tertiary) 40% 0.08 h)

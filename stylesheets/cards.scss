@@ -56,12 +56,18 @@
 }
 
 .user-main .about, .user-content, .user-main .user-content,
-.admin-detail, 
+.admin-detail, .admin-contents,
 .group-details-container, .groups-form, .user-preferences {
   background: var(--d-content-background);
   border-radius: var(--d-border-radius-large);
   box-shadow: var(--niyari-card-shadow);
   border: none;
+}
+
+.user-content,
+.admin-contents {
+  padding: var(--niyari-gutter);
+  box-sizing: border-box;
 }
 
 // summary rows group independent sections
