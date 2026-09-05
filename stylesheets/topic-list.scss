@@ -1,0 +1,213 @@
+@use "lib/viewport";
+
+.topic-list {
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  display: block;
+  width: 100%;
+}
+
+.topic-list-header {
+  display: none;
+}
+
+.topic-list-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  border: none;
+
+  @include viewport.until(sm) {
+    gap: var(--space-2);
+  }
+}
+
+.topic-list-item, .topic-list-item.visited {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--d-content-background);
+  border: none;
+  border-radius: var(--d-border-radius-large);
+  box-shadow: var(--niyari-card-shadow);
+  padding: var(--space-4);
+  transition: box-shadow 150ms ease, background-color 150ms ease;
+
+  @include viewport.until(sm) {
+    flex-wrap: wrap;
+    padding: var(--space-3);
+    border-radius: var(--d-border-radius);
+  }
+
+  .topic-list-data {
+    border: none;
+    background: transparent;
+    padding: 0 var(--space-2);
+  }
+
+  .main-link {
+    flex: 1 1 auto;
+    min-width: 0;
+    order: 2;
+  }
+
+  .posters {
+    order: 1;
+    display: flex;
+    align-items: center;
+    width: auto;
+
+    a:not(.latest) {
+      display: none;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--d-border-radius);
+    }
+  }
+
+  .posts, .views, .activity,
+  .num.age {
+    order: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    color: var(--primary-medium);
+    font-size: var(--font-down-1);
+  }
+
+  .views {
+    display: none;
+  }
+
+  .link-top-line {
+    display: block;
+    margin-bottom: var(--space-1);
+
+    .title {
+      font-weight: 600;
+      padding: 0;
+      transition: color 150ms ease;
+    }
+  }
+
+  .link-bottom-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-1);
+  }
+
+  .topic-excerpt {
+    margin-top: var(--space-2);
+    color: var(--primary-medium);
+    font-size: var(--font-down-1);
+    max-width: 100%;
+  }
+
+  .discourse-no-touch &:hover {
+    background: var(--d-content-background);
+    box-shadow: var(--niyari-card-shadow-hover);
+
+    a.title:not(.badge-notification) {
+      color: var(--tertiary);
+    }
+  }
+
+  &.selected {
+    box-shadow: 0 0 0 2px var(--tertiary);
+  }
+}
+
+.topic-list-item-separator {
+  display: flex;
+  width: 100%;
+  margin: var(--space-2) 0;
+  border: none;
+
+  .topic-list-data {
+    width: 100%;
+    border: none;
+    color: var(--primary-medium);
+    font-size: var(--font-down-1);
+  }
+}
+
+.latest-topic-list-item,
+.category-list tbody tr,
+.latest-topic-list .latest-topic-list-item {
+  background: var(--d-content-background);
+  border-radius: var(--d-border-radius-large);
+  box-shadow: var(--niyari-card-shadow);
+  border: none;
+}
+
+.latest-topic-list {
+  border: none;
+}
+
+.category-list {
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0 var(--space-3);
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    td {
+      border: none;
+      background: transparent;
+      padding: var(--space-4);
+    }
+
+    td:first-child {
+      border-radius: var(--d-border-radius-large) 0 0
+        var(--d-border-radius-large);
+    }
+
+    td:last-child {
+      border-radius: 0 var(--d-border-radius-large)
+        var(--d-border-radius-large) 0;
+    }
+  }
+}
+
+.topic-list-bottom {
+  margin-top: var(--space-4);
+}
+
+.list-container,
+#list-area,
+#list-area > .contents {
+  background: var(--d-content-background);
+  border-radius: var(--d-border-radius-large);
+  box-shadow: var(--niyari-card-shadow);
+  padding: var(--space-4) var(--space-8) var(--space-8);
+  box-sizing: border-box;
+}
+
+.list-controls + .list-container {
+  border-radius: 0 0 var(--d-border-radius-large) var(--d-border-radius-large);
+  margin-top: 0;
+}
+
+.list-container #list-area,
+.list-container #list-area > .contents {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+#list-area {
+  .show-more.has-topics {
+    border-radius: var(--d-border-radius-large);
+  }
+}

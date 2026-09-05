@@ -1,0 +1,140 @@
+@use "lib/viewport";
+
+.container.posts,
+#topic-title {
+  .title-wrapper .fancy-title {
+    font-weight: 600;
+  }
+}
+
+#topic {
+  background: var(--d-content-background);
+  border-radius: var(--d-border-radius-large);
+  box-shadow: var(--niyari-card-shadow);
+  padding: var(--niyari-gutter);
+  box-sizing: border-box;
+}
+
+#topic-title {
+  padding-bottom: var(--space-4);
+}
+
+#topic-footer-buttons {
+  padding: var(--niyari-gutter) 0 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+
+  .pinned-button,
+  .topic-notifications-button {
+    align-items: center;
+  }
+}
+
+.topic-post {
+  .topic-body,
+  .topic-avatar {
+    border: none;
+  }
+
+  .boxed.onscreen-post,
+  article.boxed {
+    background: var(--d-content-background);
+    border-radius: var(--d-border-radius-large);
+    box-shadow: var(--niyari-card-shadow);
+    padding: var(--space-4);
+    border: none;
+  }
+}
+
+.topic-body {
+  background: transparent;
+
+  .contents {
+    border: none;
+  }
+
+  .cooked {
+    line-height: var(--line-height-large);
+  }
+}
+
+.topic-avatar .avatar {
+  border-radius: var(--d-border-radius);
+}
+
+.topic-map,
+.small-action,
+.time-gap {
+  background: var(--d-content-background);
+  border: none;
+  border-radius: var(--d-border-radius-large);
+  box-shadow: var(--niyari-card-shadow);
+}
+
+.small-action {
+  padding: var(--space-3);
+}
+
+aside.quote,
+aside.onebox,
+blockquote {
+  border-radius: var(--d-border-radius);
+  background: var(--niyari-btn-regular-bg);
+  border-left: 3px solid var(--tertiary);
+}
+
+.cooked {
+  pre,
+  code {
+    border-radius: var(--d-border-radius);
+  }
+
+  pre {
+    background: var(--niyari-codeblock-bg);
+    color: #e6edf3;
+  }
+
+  p > code,
+  li > code {
+    background: var(--niyari-btn-regular-bg);
+    color: var(--niyari-btn-content);
+    border-radius: var(--d-border-radius-small);
+    padding: 0.15em 0.4em;
+  }
+}
+
+.post-menu-area .widget-button, .post-menu-area .btn, .post-action-menu .btn {
+  border-radius: var(--d-border-radius);
+}
+
+.timeline-container .topic-timeline {
+  .timeline-scrollarea {
+    border-left-color: var(--niyari-line-color);
+  }
+
+  .timeline-handle {
+    background: var(--tertiary);
+    border-radius: 999px;
+  }
+}
+
+.suggested-topics {
+  .suggested-topics-title {
+    font-weight: 600;
+  }
+
+  .topic-list-item {
+    margin-bottom: 0;
+  }
+}
+
+.user-stream .item,
+.user-stream .user-stream-item {
+  background: var(--d-content-background);
+  border: none;
+  border-radius: var(--d-border-radius-large);
+  box-shadow: var(--niyari-card-shadow);
+  margin-bottom: var(--space-3);
+  padding: var(--space-4);
+}

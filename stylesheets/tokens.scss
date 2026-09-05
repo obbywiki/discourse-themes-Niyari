@@ -1,0 +1,129 @@
+// inspired by https://github.com/saicaca/fuwari
+
+:root {
+  --niyari-hue: 250;
+  --niyari-page-width: 75rem;
+  --niyari-card-shadow: 0 2px 8px rgb(0, 0, 0, 0.04);
+  --niyari-card-shadow-hover: 0 4px 16px rgb(0, 0, 0, 0.07);
+  --accent-text-color: #fff;
+  --background-color: light-dark(
+    oklch(from var(--tertiary) 95% 0.01 h),
+    oklch(from var(--tertiary) 16% 0.014 h)
+  );
+  --d-content-background: light-dark(#fff, var(--secondary));
+  --niyari-btn-content: light-dark(
+    oklch(from var(--tertiary) 55% 0.12 h),
+    oklch(from var(--tertiary) 75% 0.1 h)
+  );
+  --niyari-btn-regular-bg: light-dark(
+    oklch(from var(--tertiary) 95% 0.025 h),
+    oklch(from var(--tertiary) 33% 0.035 h)
+  );
+  --niyari-btn-regular-bg-hover: light-dark(
+    oklch(from var(--tertiary) 90% 0.05 h),
+    oklch(from var(--tertiary) 38% 0.04 h)
+  );
+  --niyari-btn-regular-bg-active: light-dark(
+    oklch(from var(--tertiary) 85% 0.08 h),
+    oklch(from var(--tertiary) 43% 0.045 h)
+  );
+  --niyari-btn-plain-bg-hover: light-dark(
+    oklch(from var(--tertiary) 95% 0.025 h),
+    oklch(from var(--tertiary) 30% 0.035 h)
+  );
+  --niyari-selection-bg: light-dark(
+    oklch(from var(--tertiary) 90% 0.05 h),
+    oklch(from var(--tertiary) 40% 0.08 h)
+  );
+  --niyari-float-panel-bg: light-dark(
+    #fff,
+    oklch(from var(--tertiary) 19% 0.015 h)
+  );
+  --niyari-line-color: light-dark(rgb(0, 0, 0, 0.08), rgb(255, 255, 255, 0.08));
+  --niyari-codeblock-bg: oklch(from var(--tertiary) 17% 0.015 h);
+  --niyari-page-bg: var(--background-color, var(--secondary));
+  --d-font-family--monospace:
+    "JetBrains Mono", "SFMono-Regular", ui-monospace, "Cascadia Code",
+    "Segoe UI Mono", monospace;
+
+  --d-max-width: var(--niyari-page-width);
+  --d-border-radius: 0.75rem;
+  --d-border-radius-large: 1rem;
+  --d-border-radius-small: 0.5rem;
+  --d-button-border-radius: var(--d-border-radius);
+  --d-input-border-radius: var(--d-border-radius);
+  --d-nav-pill-border-radius: var(--d-border-radius);
+  --d-tag-border-radius: 999px;
+  --d-tag-background-color: var(--niyari-btn-regular-bg);
+  --d-tag-horizontal-padding: 0.5em;
+  --d-tag-font-size: var(--font-down-1);
+
+  --d-nav-underline-height: 0;
+  --d-nav-bg-color--hover: var(--niyari-btn-plain-bg-hover);
+  --d-nav-bg-color--active: var(--niyari-btn-regular-bg);
+  --d-nav-color--hover: var(--tertiary);
+  --d-nav-color--active: var(--niyari-btn-content);
+  --d-nav-border-color--active: transparent;
+
+  --niyari-gutter: var(--space-6);
+  --nav-horizontal-padding: var(--niyari-gutter);
+  --main-outlet-padding-x: var(--niyari-gutter);
+  --main-outlet-padding-bottom: var(--niyari-gutter);
+  --list-container-padding-x: var(--niyari-gutter);
+  --d-wrap-padding-x: var(--niyari-gutter);
+  --topic-body-width-padding: var(--space-4);
+  --active-shadow: none;
+
+  --d-header-icon-background--hover: var(--niyari-btn-plain-bg-hover);
+  --d-header-icon-color--hover: var(--tertiary);
+
+  --topic-list-item-background-color: var(--d-content-background);
+  --topic-list-item-background-color--visited: var(--d-content-background);
+  --d-topic-list-header-background-color: transparent;
+  --d-topic-list-margin-bottom: var(--space-3);
+  --d-category-box-background-color: var(--d-content-background);
+
+  --d-button-border: none;
+  --d-button-default-bg-color: var(--niyari-btn-regular-bg);
+  --d-button-default-bg-color--hover: var(--niyari-btn-regular-bg-hover);
+  --d-button-default-text-color: var(--niyari-btn-content);
+  --d-button-default-text-color--hover: var(--niyari-btn-content);
+  --d-button-default-icon-color: var(--niyari-btn-content);
+  --d-button-default-icon-color--hover: var(--niyari-btn-content);
+
+  --d-button-primary-bg-color: var(--tertiary);
+  --d-button-primary-bg-color--hover: var(--tertiary);
+  --d-button-primary-text-color: var(--accent-text-color);
+  --d-button-primary-text-color--hover: var(--accent-text-color);
+  --d-button-primary-icon-color: var(--accent-text-color);
+  --d-button-primary-icon-color--hover: var(--accent-text-color);
+
+  --shadow-card: var(--niyari-card-shadow);
+  --shadow-dropdown: 0 8px 24px rgb(0, 0, 0, 0.08);
+  --shadow-header: none;
+  --shadow-modal: 0 16px 40px rgb(0, 0, 0, 0.12);
+  --shadow-composer: 0 -8px 24px rgb(0, 0, 0, 0.06);
+}
+
+html {
+  background-color: var(--niyari-page-bg);
+  --d-nav-underline-height: 0px !important;
+}
+
+body {
+  background-color: var(--niyari-page-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+#main-outlet,
+#main-outlet-wrapper {
+  background: transparent;
+}
+
+::selection {
+  background-color: var(--niyari-selection-bg);
+}
+
+code, pre, kbd, samp {
+  font-family: var(--d-font-family--monospace);
+}

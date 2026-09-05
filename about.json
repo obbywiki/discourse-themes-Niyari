@@ -1,0 +1,45 @@
+{
+    "name": "Niyari",
+    "component": false,
+    "license_url": null,
+    "about_url": "https://github.com/obbywiki/discourse-themes-Niyari",
+    "authors": "The Obby Wiki",
+    "theme_version": "0.0.0",
+    "minimum_discourse_version": "3.5.0",
+    "assets": {},
+    "modifiers": {
+        "serialize_topic_excerpts": true
+    },
+    "color_schemes": {
+        "Niyari Light": {
+            "primary": "1a222b",
+            "secondary": "ffffff",
+            "tertiary": "53a3f2",
+            "tertiary-med-or-tertiary": "53a3f2",
+            "quaternary": "3275b4",
+            "header_background": "ffffff",
+            "header_primary": "1a222b",
+            "highlight": "dd8736",
+            "danger": "de3b3d",
+            "success": "00baa2",
+            "love": "ce7cc8",
+            "selected": "c6e1ff",
+            "hover": "e2f0ff"
+        },
+        "Niyari Dark": {
+            "primary": "f2f5f8",
+            "secondary": "181e24",
+            "tertiary": "63b3ff",
+            "tertiary-med-or-tertiary": "63b3ff",
+            "quaternary": "7cb3eb",
+            "header_background": "181e24",
+            "header_primary": "f2f5f8",
+            "highlight": "ee9748",
+            "danger": "f14d4c",
+            "success": "00cab1",
+            "love": "df8cd8",
+            "selected": "224a71",
+            "hover": "283747"
+        }
+    }
+}

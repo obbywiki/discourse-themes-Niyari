@@ -1,0 +1,182 @@
+@use "lib/viewport";
+
+.hamburger-panel .menu-panel,
+.hamburger-panel .menu-panel.revamped {
+  --active-shadow: none;
+  --d-sidebar-row-horizontal-padding: var(--space-4);
+  --d-sidebar-row-height: 2.5rem;
+  --d-sidebar-active-background: var(--niyari-btn-regular-bg);
+  --d-sidebar-active-color: var(--niyari-btn-content);
+  --d-sidebar-highlight-background: var(--niyari-btn-plain-bg-hover);
+  --d-sidebar-highlight-color: var(--niyari-btn-content);
+  --d-hover: var(--niyari-btn-regular-bg);
+  --list-item-padding: var(--space-3) var(--space-4);
+  width: 28rem;
+  min-width: 0;
+  max-width: calc(100vw - 2rem);
+  padding: var(--space-3);
+  border: none;
+  border-radius: var(--d-border-radius-large);
+  background: var(--niyari-float-panel-bg);
+  box-shadow: var(--shadow-dropdown);
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .panel-body, .panel-body-contents, .panel-body-content, .sidebar-hamburger-dropdown {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .sidebar-sections {
+    background: transparent;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+  }
+
+  .sidebar-section-wrapper.sidebar-section {
+    padding: var(--space-3) 0;
+    margin: 0;
+    border-color: var(--niyari-line-color);
+  }
+
+  .sidebar-section-header-wrapper,
+  .sidebar-section-header {
+    padding-inline: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+
+  .sidebar-section-content {
+    display: grid;
+    gap: var(--space-1) var(--space-2);
+    padding-inline: 0;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    @include viewport.until(sm) {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .sidebar-section-link-wrapper .sidebar-section-link, .sidebar-section-link {
+    border-radius: var(--d-border-radius);
+    padding: var(--space-2) var(--space-3);
+    min-height: var(--d-sidebar-row-height);
+    height: auto;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .sidebar-section-link-content-text {
+    overflow: visible;
+    text-overflow: unset;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .sidebar-section-link-wrapper .sidebar-section-link:hover,
+  .sidebar-section-link-wrapper .sidebar-section-link:focus {
+    background: var(--niyari-btn-plain-bg-hover);
+    box-shadow: none;
+    color: var(--niyari-btn-content);
+  }
+
+  .sidebar-section-link:focus-visible {
+    outline: 2px solid var(--tertiary);
+    outline-offset: -2px;
+  }
+
+  .sidebar-section-link-wrapper .sidebar-section-link.active,
+  .sidebar-section-link-wrapper .sidebar-section-link--active {
+    background: var(--niyari-btn-regular-bg);
+    color: var(--niyari-btn-content);
+    box-shadow: none;
+  }
+
+  .sidebar-footer-wrapper {
+    position: static;
+    margin-top: 0;
+    padding: var(--space-2) 0 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+
+    .sidebar-footer-container {
+      padding: 0;
+      background: transparent;
+      border: none;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+}
+
+.sidebar-wrapper {
+  background: transparent;
+
+  .sidebar-container {
+    border-inline-end: none;
+  }
+
+  .sidebar-sections,
+  .sidebar-footer-wrapper {
+    --d-sidebar-highlight-background: var(--niyari-btn-plain-bg-hover);
+    --d-sidebar-active-background: var(--niyari-btn-regular-bg);
+    --d-sidebar-active-color: var(--niyari-btn-content);
+  }
+
+  .sidebar-sections.admin-panel {
+    --d-sidebar-admin-background: var(--d-content-background);
+    --d-sidebar-highlight-background: var(--niyari-btn-plain-bg-hover);
+    --d-sidebar-active-background: var(--niyari-btn-regular-bg);
+    --d-sidebar-active-color: var(--niyari-btn-content);
+  }
+
+  .sidebar-footer-wrapper {
+    background: var(--niyari-page-bg);
+  }
+
+  .sidebar-footer-container::before {
+    content: none;
+  }
+}
+
+.sidebar-container,
+#d-sidebar {
+  background: transparent;
+}
+
+.sidebar-sections {
+  @include viewport.from(lg) {
+    background: var(--d-content-background);
+    border-radius: var(--d-border-radius-large);
+    box-shadow: var(--niyari-card-shadow);
+    margin: var(--space-3);
+    padding-block: var(--space-2);
+  }
+}
+
+.sidebar-section-wrapper {
+  .sidebar-section-header-button,
+  .sidebar-more-section-trigger {
+    border-radius: var(--d-border-radius);
+  }
+}
+
+.sidebar-section-link-wrapper .sidebar-section-link {
+  border-radius: var(--d-border-radius);
+}
+
+.btn.sidebar-new-topic-button,
+.sidebar-new-topic-button__wrapper .btn {
+  border-radius: var(--d-border-radius);
+}

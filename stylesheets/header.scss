@@ -1,0 +1,86 @@
+@use "lib/viewport";
+
+.d-header-wrap {
+  background: transparent;
+}
+
+.d-header {
+  background: transparent;
+  box-shadow: none;
+}
+
+.d-header .wrap {
+  background: var(--d-content-background);
+  border-radius: 0 0 var(--d-border-radius-large) var(--d-border-radius-large);
+  max-width: var(--niyari-page-width);
+  margin-inline: auto;
+  padding-inline: var(--niyari-gutter);
+  box-shadow: var(--niyari-card-shadow);
+
+  @include viewport.until(md) {
+    border-radius: 0 0 var(--d-border-radius) var(--d-border-radius);
+  }
+}
+
+.d-header-icons .icon,
+.header-sidebar-toggle .btn,
+.header-sidebar-toggle button {
+  --active-shadow: none;
+  border-radius: var(--d-border-radius);
+  border: none;
+  box-shadow: none;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.discourse-no-touch .d-header-icons .icon:hover,
+.discourse-no-touch .d-header-icons .icon:focus,
+.drop-down-mode .d-header-icons .active .icon,
+.discourse-no-touch .header-sidebar-toggle button:hover {
+  background-color: var(--niyari-btn-plain-bg-hover);
+  border-color: transparent;
+  box-shadow: none;
+
+  .d-icon {
+    color: var(--niyari-btn-content);
+  }
+}
+
+.drop-down-mode .d-header-icons .active .icon {
+  background-color: var(--niyari-btn-regular-bg);
+  box-shadow: none;
+
+  .d-icon {
+    color: var(--niyari-btn-content);
+  }
+}
+
+.search-menu .search-input,
+.search-menu-container .search-input {
+  border-radius: var(--d-input-border-radius);
+  border-color: var(--niyari-line-color);
+  background: var(--d-content-background);
+}
+
+.menu-panel,
+.menu-panel.drop-down,
+.fk-d-menu,
+.fk-d-menu__inner-content {
+  border: none;
+  border-radius: var(--d-border-radius-large);
+  background: var(--niyari-float-panel-bg);
+  box-shadow: var(--shadow-dropdown);
+}
+
+.d-header-icons .badge-notification {
+  border-color: var(--d-content-background);
+}
+
+body.login-page,
+body.signup-page,
+body.invite-page,
+body.password-reset-page,
+body.activate-account-page {
+  .d-header {
+    background: transparent;
+  }
+}

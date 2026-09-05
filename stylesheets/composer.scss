@@ -1,0 +1,35 @@
+#reply-control {
+  border-radius: var(--d-border-radius-large) var(--d-border-radius-large) 0 0;
+  box-shadow: var(--shadow-composer);
+  background: var(--d-content-background);
+  border: none;
+}
+
+.d-editor-textarea-wrapper, .d-editor-preview-wrapper {
+  border-radius: var(--d-border-radius);
+  border-color: var(--niyari-line-color);
+  background: var(--d-content-background);
+}
+
+.d-editor-button-bar {
+  border-bottom-color: var(--niyari-line-color);
+
+  .btn {
+    border-radius: var(--d-border-radius-small);
+  }
+}
+
+.composer-popup, .composer-popup-container {
+  border-radius: var(--d-border-radius-large);
+}
+
+#reply-control .reply-to, #reply-control .composer-controls .btn {
+  border-radius: var(--d-border-radius);
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="search"], input[type="number"],
+textarea, select,
+.d-editor-textarea-wrapper, div.ac-wrap {
+  border-radius: var(--d-input-border-radius);
+  border-color: var(--niyari-line-color);
+}

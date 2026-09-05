@@ -1,0 +1,69 @@
+html {
+  --accent-color: #{$tertiary} !important;
+  --accent-text-color: #fff;
+  --niyari-hue: 250;
+
+  --background-color: light-dark(
+    oklch(from #{$tertiary} 95% 0.01 h),
+    oklch(from #{$tertiary} 16% 0.014 h)
+  ) !important;
+  --d-content-background: light-dark(#fff, #{$secondary}) !important;
+
+  --niyari-card-bg: var(--d-content-background);
+  --niyari-page-bg: var(--background-color);
+  --niyari-btn-content: light-dark(
+    oklch(from #{$tertiary} 55% 0.12 h),
+    oklch(from #{$tertiary} 75% 0.1 h)
+  );
+  --niyari-btn-regular-bg: light-dark(
+    oklch(from #{$tertiary} 95% 0.025 h),
+    oklch(from #{$tertiary} 33% 0.035 h)
+  );
+  --niyari-btn-regular-bg-hover: light-dark(
+    oklch(from #{$tertiary} 90% 0.05 h),
+    oklch(from #{$tertiary} 38% 0.04 h)
+  );
+  --niyari-btn-regular-bg-active: light-dark(
+    oklch(from #{$tertiary} 85% 0.08 h),
+    oklch(from #{$tertiary} 43% 0.045 h)
+  );
+  --niyari-btn-plain-bg-hover: light-dark(
+    oklch(from #{$tertiary} 95% 0.025 h),
+    oklch(from #{$tertiary} 30% 0.035 h)
+  );
+  --niyari-selection-bg: light-dark(
+    oklch(from #{$tertiary} 90% 0.05 h),
+    oklch(from #{$tertiary} 40% 0.08 h)
+  );
+  --niyari-float-panel-bg: light-dark(
+    #fff,
+    oklch(from #{$tertiary} 19% 0.015 h)
+  );
+  --niyari-line-color: light-dark(rgb(0, 0, 0, 0.08), rgb(255, 255, 255, 0.08));
+  --niyari-codeblock-bg: oklch(from #{$tertiary} 17% 0.015 h);
+
+  --d-selected: light-dark(
+    oklch(from #{$tertiary} 90% 0.05 h),
+    oklch(from #{$tertiary} 40% 0.08 h)
+  );
+  --d-hover: light-dark(
+    oklch(from #{$tertiary} 95% 0.025 h),
+    oklch(from #{$tertiary} 33% 0.035 h)
+  );
+
+  --d-sidebar-background: var(--background-color);
+  --d-sidebar-footer-fade: var(--background-color);
+  --d-sidebar-border-color: transparent;
+  --d-sidebar-highlight-background: var(--d-selected);
+  --d-sidebar-active-background: var(--d-selected);
+  --d-sidebar-highlight-color: var(--primary);
+  --d-sidebar-active-color: var(--primary);
+  --d-input-bg-color: var(--d-content-background);
+
+  --link-color: var(--tertiary);
+  --d-link-color: var(--tertiary);
+  --tertiary-hover: #{$tertiary};
+
+  --hljs-bg: var(--niyari-codeblock-bg);
+  --inline-code-bg: var(--niyari-btn-regular-bg);
+}

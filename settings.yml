@@ -1,0 +1,3 @@
+header_dropdown_menu:
+  default: true
+  type: bool
