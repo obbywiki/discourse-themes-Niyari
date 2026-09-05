@@ -70,6 +70,12 @@
   box-sizing: border-box;
 }
 
+#main-outlet>.regular {
+  padding: var(--niyari-gutter);
+  box-sizing: border-box;
+  border-radius: var(--d-border-radius-large);
+}
+
 // summary rows group independent sections
 
 .user-main {
