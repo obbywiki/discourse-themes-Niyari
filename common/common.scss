@@ -10,3 +10,10 @@
 @import "composer";
 @import "cards";
 @import "profile";
+
+// force scrollbar to behave more like macos
+
+html, body, .scroll-container {
+    overflow-y: auto;
+    scrollbar-gutter: stable both-edges;
+}
