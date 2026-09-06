@@ -4,7 +4,7 @@
     "license_url": null,
     "about_url": "https://github.com/obbywiki/discourse-themes-Shizuku",
     "authors": "The Obby Wiki",
-    "theme_version": "0.0.0",
+    "theme_version": "0.1.0",
     "minimum_discourse_version": "3.5.0",
     "assets": {},
     "modifiers": {
